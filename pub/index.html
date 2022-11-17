@@ -9,26 +9,13 @@
 </head>
 
 <body>
-    <form action="/vote" method="post">
-        <label for="person">Person to vote for:</label>
-        <input type="text" id="person" name="candidate">
-    </form>
-
-    <form action="/numberOfCandidates" method="get">
-        <input type="submit" value="Get candidate count">
-    </form>
-
-    <form action="/sumVote" method="get">
-        <input type="submit" value="Get total number of votes">
-    </form>
-    <form action="/reset" method="post">
-        <label for="pass">Reset Votes:</label>
-        <input id="pass" type="password" name="password">
-    </form>
-    <form action="/canTotal" method="get">
-        <label for="total">Find total for candidate:</label>
-        <input type="text" id="total" name="candidate">
-    </form>
+    <a href="votingForm.html">
+        <button class="btn btn-primary btn-lg">Voting Form</button>
+    </a>
+    <br> <br>
+    <a href="votingWebApp.html">
+        <button class="btn btn-primary btn-lg">Voting App</button>
+    </a>
 </body>
 
 </html>

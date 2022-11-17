@@ -21,7 +21,7 @@ server.post("/vote", function (req, res) {
 });
 
 server.post("/reset", function (req, res) {
-    if (req.body.password === "pass123") {
+    if (req.body.pass == "pass123") {
         res.write("Password Correct, votes have been reset");
         for (var x in voteTotals) delete voteTotals[x];
     } else {
